@@ -1,12 +1,16 @@
 const router = require('express').Router()
 
+router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
+
 // GET /places
 router.get('/', (req, res) => {
     let places = [{
         name: 'Coffee Beans Cafe',
         city: 'Seattle',
         state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
+        cuisines: 'Croissant, French cuisine',
         pic: '/images/coffee-beans.jpg'
       }, {
           name: 'Coding Cat Cafe',
