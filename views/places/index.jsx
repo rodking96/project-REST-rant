@@ -7,14 +7,14 @@ function Index (data) {
       return (
         <div className="col-sm-6">
           <h2>
-            <a href={`/places/${index}`} >
+          <a href={`/places/${index}`} >
             {place.name}
             </a>
             </h2>
           <p className="text-center">
           {place.cuisines}
         </p>
-          <img src={place.pic} alt={place.name}/>
+          <img src={place.pic} alt={place.name} width="400" height="400"/>
           <p className="text-center">
           Located in {place.city}, {place.state}
         </p>
@@ -33,3 +33,4 @@ function Index (data) {
   )}
 
 module.exports = Index
+
