@@ -24,10 +24,10 @@ function show (data) {
               <h4>
                 Serving {data.place.cuisines}
               </h4>
-              <p className="text-center">
+              {/* <p className="text-center">
                 Located in {data.place.city}, {data.place.state} and serving{" "}
                 {data.place.cuisines}
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="row">
