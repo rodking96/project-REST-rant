@@ -75,7 +75,7 @@ function show(data) {
                 Edit
               </a>
               <form action={`/places/${data.id}?_method=DELETE`} method="POST">
-                <button type="submit" className="btn btn-danger">
+                <button className="btn btn-danger" type="submit">
                   Delete
                 </button>
               </form>
