@@ -71,10 +71,10 @@ function show(data) {
           </div>
           <div className="row">
             <div>
-              <a href={`/places/${data.id}/edit`} className="btn btn-warning">
+              <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">
                 Edit
               </a>
-              <form action={`/places/${data.id}?_method=DELETE`} method="POST">
+              <form action={`/places/${data.place.id}?_method=DELETE`} method="POST">
                 <button className="btn btn-danger" type="submit">
                   Delete
                 </button>

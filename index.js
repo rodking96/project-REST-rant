@@ -35,5 +35,5 @@ mongoose.connect(process.env.MONGO_URI, {
 const PORT = process.env.PORT || 3000
 
 // Listen for Connections
-// app.listen(process.env.PORT)
-app.listen(PORT, () => console.log(`listening on port ${PORT}`))
+app.listen(process.env.PORT)
+// app.listen(PORT, () => console.log(`listening on port ${PORT}`))
